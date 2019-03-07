@@ -2,20 +2,6 @@
 
 CSRand* Operations::randd = new CSRand();
 
-//std::map<char, int> Operations::nums =
-//{
-//	std::pair<char,int>('0',0),
-//	std::pair<char,int>('1',1),
-//	std::pair<char,int>('2',2),
-//	std::pair<char,int>('3',3),
-//	std::pair<char,int>('4',4),
-//	std::pair<char,int>('5',5),
-//	std::pair<char,int>('6',6),
-//	std::pair<char,int>('7',7),
-//	std::pair<char,int>('8',8),
-//	std::pair<char,int>('9',9)
-//};
-
 double Operations::Sigmoid(double val)
 {
 	return 1.0 / (1 + exp(-val));
@@ -25,14 +11,6 @@ double Operations::ReverseSigmoid(double val)
 {
 	return -log((1 / val) - 1);
 }
-
-//char* Operations::StrToCharPointer(string text)
-//{
-//	char* writable = new char[text.size() + 1];
-//	copy(text.begin(), text.end(), writable);
-//	writable[text.size()] = '\0';
-//	return writable;
-//}
 
 char* Operations::StrToCharPointer(std::string text)
 {

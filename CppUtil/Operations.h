@@ -26,15 +26,12 @@ public:
 	static std::string GetTextBetween(std::string ogText, std::string a, std::string b);
 	static bool TryParse(std::string text, IntWrapper* number);
 	static bool DoubleTryParse(std::string text, DoubleWrapper* number);
-	//static bool IsNumber(char c);
 	static std::vector<double> GetVectorFromPointerThingy(double* values, int length);
 	static double Normalise(double x, double min, double max);
 	static double Normalise(double x);
 	static double ReverseNormalise(double x, double min, double max);
 	static double ReverseNormalise(double x);
-	//static int num;
 	static CSRand* randd;
-	//static std::map<char, int> nums;
 	static int GetNum(char c);
 	
 	//Will only work for square-bracket arrays (i.e. int example[5];).
